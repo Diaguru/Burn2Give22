@@ -25,19 +25,19 @@ const Testimoni = ({
       country: "",
       rating: "5.0",
       testimoni:
-        "A genius planning and marketing expert who always comes up with new ideas.",
+        "A genius planning and marketing expert .",
     },
     {
       name: "Diabright",
-      image: "/assets/Diabright.png",
+      image: "/assets/diabright.png",
       city: "CMO",
       country: "",
       rating: "5.0",
       testimoni:
-        "A genius planning and marketing expert who always comes up with new ideas.",
+        "A genius planning and marketing expert .",
     },
     
-  ],
+   ],
 }) => {
   const settings = {
     dots: true,

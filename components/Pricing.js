@@ -202,11 +202,11 @@ const Pricing = () => {
                 className="h-14 w-auto mt-4 lg:mt-2"
                 alt=""
               />
-              <img
+              {/* <img
                 src="/assets/Icon/CoinGecko.png"
                 className="h-14 w-auto mt-2 lg:mt-0"
                 alt=""
-              />
+              /> */}
               <img
                 src="/assets/Icon/CoinMarketCap.png"
                 className="h-12 w-auto mt-2 lg:mt-0"
@@ -218,7 +218,7 @@ const Pricing = () => {
                 alt=""
               />
               <img
-                src="/assets/Icon/spotify.png"
+                src="/assets/Icon/coinbase.png"
                 className="h-12 w-auto mt-2 lg:mt-0"
                 alt=""
               />
