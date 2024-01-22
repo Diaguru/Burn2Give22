@@ -9,7 +9,7 @@ const Hero = ({
   listUser = [
     {
       name: "Users",
-      number: "390000",
+      number: "39000",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
@@ -45,9 +45,20 @@ const Hero = ({
               </p>
               <ButtonPrimary>Get Started</ButtonPrimary>
             </div>
-            <div class="rounded-[12px]">
+            {/* <div className="flex w-full">
+              <motion.div className="h-full w-full" variants={scrollAnimation}>
+                <Image
+                  src="/assets/Illustration1.png"
+                  alt="VPN Illustrasi"
+                  quality={100}
+                  width={612}
+                  height={383}
+                  layout="responsive"
+                />
+              </motion.div>
+            </div> */}
+            <div className="flex w-full">
               <motion.div className="h-full, w-full" variants={scrollAnimation}>
-             
                 <Image
                   src="/assets/hero.svg"
                   alt="Burn2Give"
@@ -57,7 +68,6 @@ const Hero = ({
                   layout="responsive"
                   class="rounded-[50px]"
                 />
-             
               </motion.div>
             </div>
           </motion.div>

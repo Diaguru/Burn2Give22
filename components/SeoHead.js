@@ -7,14 +7,14 @@ const defaultMeta = {
   title: 'Burn2Give',
   siteName: 'Burn2Give',
   description:
-    'Landing page VPN Burn2Give Best VPN For Privacy, Country and Cheapest',
+    'Burn2Give Best CriptoCurrency',
   // change base url of your web (without '/' at the end)
-  url: 'https://next-landing-vpn.vercel.app',
+  url: 'https://burn2give.vercel.app',
   type: 'website',
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://next-landing-vpn.vercel.app/assets/card-image.png',
+  image: 'https://burn2give.vercel.app/assets/card-image.png',
   author: 'Lorem Ipsum'
 };
 

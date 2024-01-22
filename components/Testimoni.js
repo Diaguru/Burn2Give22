@@ -7,13 +7,15 @@ import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
+
+
 const Testimoni = ({
   listTestimoni = [
     {
       name: "DiaGUru",
       image: "/assets/diaguru.png",
       city: "CEO",
-      country: "",
+      country: "test",
       rating: "5.0",
       testimoni:
         "Genius coin developer",
@@ -22,25 +24,26 @@ const Testimoni = ({
       name: "DiaSeaBunny",
       image: "/assets/diaseabunny.png",
       city: "CMO",
-      country: "",
+      country: "test",
       rating: "5.0",
       testimoni:
-        "A genius planning and marketing expert .",
+        "A genius planning and marketing expert",
     },
     {
       name: "Diabright",
       image: "/assets/diabright.png",
       city: "CMO",
-      country: "",
+      country: "test",
       rating: "5.0",
       testimoni:
-        "A genius planning and marketing expert .",
+        "A genius planning and marketing expert",
     },
-    
-   ],
+   
+  ],
 }) => {
   const settings = {
     dots: true,
+   width: 1200,
     customPaging: function (i) {
       return (
         <a className="">
@@ -53,23 +56,7 @@ const Testimoni = ({
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    
   };
   const [sliderRef, setSliderRef] = useState(null);
 
@@ -83,7 +70,8 @@ const Testimoni = ({
       >
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+          <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+            {/* <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg "> */}
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
@@ -103,8 +91,8 @@ const Testimoni = ({
                 </div>
                 <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
                   <p className="text-sm">{listTestimonis.rating}</p>
-                  <span className="flex ml-4">
-                    <Stars className="h-4 w-4" />
+                  <span className="flex ml-3">
+                    <Stars className="h-3 w-3" />
                   </span>
                 </div>
               </div>

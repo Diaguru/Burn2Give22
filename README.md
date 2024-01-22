@@ -1,7 +1,4 @@
-# [Tailwind VPN Landingpage](https://next-landing-vpn.vercel.app/) - Free Landingpage Template Apps
-
-
-## Getting Started
+# ## Getting Started
 
 
 

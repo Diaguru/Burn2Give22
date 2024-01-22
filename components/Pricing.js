@@ -212,7 +212,7 @@ const Pricing = () => {
                 className="h-12 w-auto mt-2 lg:mt-0"
                 alt=""
               />
-              <img
+              {/* <img
                 src="/assets/Icon/Hotbit.png"
                 className="h-14 w-auto mt-2 lg:mt-0"
                 alt=""
@@ -221,7 +221,7 @@ const Pricing = () => {
                 src="/assets/Icon/coinbase.png"
                 className="h-12 w-auto mt-2 lg:mt-0"
                 alt=""
-              />
+              /> */}
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
@@ -230,12 +230,11 @@ const Pricing = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-              Trustworthy Development Team{" "}
+              Trustworthy Development Team
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
-            >
+              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12">
               Meet the developers coding all night long to bring the coin ecosystem to the real world.
             </motion.p>
           </ScrollAnimationWrapper>

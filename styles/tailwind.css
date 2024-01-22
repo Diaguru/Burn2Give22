@@ -12,15 +12,6 @@ body {
 p {
   @apply text-black-500;
 }
-.rounded-image {
-  border-radius: 10px; /* 모서리 둥글기 정도를 조절할 수 있습니다. */
-  overflow: hidden;    /* border-radius 적용을 위한 설정 */
-}
-
-.rounded-image img {
-  border-radius: 10px; /* 모서리 둥글기 정도를 조절할 수 있습니다. */
-  overflow: hidden;
-}
 .animation-hover:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
@@ -70,10 +61,6 @@ li.check:before {
 .slick-dots .slick-active span {
   @apply bg-orange-500 rounded-l-full rounded-r-full w-12;
 }
-
-
-
-
 
 /* purgecss end ignore */
 @tailwind utilities;
