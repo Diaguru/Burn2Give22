@@ -63,7 +63,7 @@ const Pricing = () => {
                   First incineration and donation
                   </li>
                   <li className="relative check custom-list my-2">
-                  [Hotbit.io](http://hotbit.io/) listed
+                  Hotbit.io listed
 
                   </li>
                   <li className="relative check custom-list my-2">
@@ -155,9 +155,6 @@ const Pricing = () => {
                 </li>
                 <li className="relative check custom-list my-2">
                 Listed on 3tier exchange
-                </li>
-                <li className="relative check custom-list my-2">
-                Linkage and incineration nft function with memecoin to be developed later
                 </li>
                 <li className="relative check custom-list my-2">
                 10000 holder goal (voting, opinion polls, donations, activation of own community)
