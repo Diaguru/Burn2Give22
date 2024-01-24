@@ -154,7 +154,7 @@ const Pricing = () => {
                 Donate $500,000 annually
                 </li>
                 <li className="relative check custom-list my-2">
-                Listed on 3tier exchange
+                Listed on 3tier exchange            
                 </li>
                 <li className="relative check custom-list my-2">
                 10000 holder goal (voting, opinion polls, donations, activation of own community)

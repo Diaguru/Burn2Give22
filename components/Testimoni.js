@@ -1,16 +1,12 @@
 import React, { useState } from "react";
-
-// import react slick
-import Slider from "react-slick";
 import Image from "next/image";
-import Stars from "../public/assets/Icon/stars.svg";
-import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
-import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
-
-
+import ButtonPrimary from "./misc/ButtonPrimary";
+import {motion} from "framer-motion";
+import getScrollAnimation from "../utils/getScrollAnimation";
+import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const Testimoni = ({
-  listTestimoni = [
+  listUser = [
     {
       name: "DiaGUru",
       image: "/assets/diaguru.png",
@@ -38,86 +34,56 @@ const Testimoni = ({
       testimoni:
         "A genius planning and marketing expert",
     },
-   
   ],
 }) => {
-  const settings = {
-    dots: true,
-   width: 1200,
-    customPaging: function (i) {
-      return (
-        <a className="">
-          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
-        </a>
-      );
-    },
-    dotsClass: "slick-dots w-max absolute mt-20  ",
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    
-  };
-  const [sliderRef, setSliderRef] = useState(null);
+  const scrollAnimation = useState(() => getScrollAnimation(), []);
 
   return (
-    <>
-      <Slider
-        {...settings}
-        arrows={false}
-        ref={setSliderRef}
-        className="flex items-stretch justify-items-stretch"
-      >
-        {listTestimoni.map((listTestimonis, index) => (
-          <div className="px-3 flex items-stretch" key={index}>
-          <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
-            {/* <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg "> */}
-              <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-                <div className="flex order-2 xl:order-1">
-                  <Image
-                    src={listTestimonis.image}
-                    height={50}
-                    width={50}
+    <div
+      className="max-w-screen-xl mt-4 px-8 xl:px-16 mx-auto"
+      id="about"
+    >
+      
+      <div className="relative w-full flex items-start">
+        <ScrollAnimationWrapper
+          className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-1 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
+          {listUser.map((listUsers, index) => (
+            <motion.div
+              className="flex items-start justify-start sm:justify-start py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+              key={index}
+              custom={{duration: 2 + index}}
+              variants={scrollAnimation}
+            >
+             {/* <Image
+                    src={listUsers.image}
+                    height={250}
+                    width={250}
                     alt="Icon People"
-                  />
-                  <div className="flex flex-col ml-5 text-left">
-                    <p className="text-lg text-black-600 capitalize">
-                      {listTestimonis.name}
-                    </p>
-                    <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
-                    </p>
-                  </div>
+                  /> */}
+              {/* <div className="flex mx-auto w-40 sm:w-auto"> */}
+              <div style={{ width: "100%" }}>
+                {/* <div className="flex items-center justify-center bg-orange-100 w-100 h-100 mr-6 rounded-full"> */}
+                <div className="flex items-center justify-center" style={{ width: "100%" }}>
+                  <img src={listUsers.image} style={{ width: "60%" }} />
                 </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  <p className="text-sm">{listTestimonis.rating}</p>
-                  <span className="flex ml-3">
-                    <Stars className="h-3 w-3" />
-                  </span>
+                <p className="text-lg text-black-500">{""}</p>
+                <div className="flex flex-col">
+                  <p className="text-xl text-black-600 font-bold">
+                    {listUsers.city}
+                  </p>
+                  <p className="text-lg text-black-500">{listUsers.name}</p>
+                  <p className="text-lg text-black-500">{listUsers.testimoni}</p>
                 </div>
               </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
-            </div>
-          </div>
-        ))}
-      </Slider>
-      <div className="flex w-full items-center justify-end">
-        <div className="flex flex-none justify-between w-auto mt-14">
-          <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
-            onClick={sliderRef?.slickPrev}
-          >
-            <ArrowBack className="h-6 w-6 " />
-          </div>
-          <div
-            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
-            onClick={sliderRef?.slickNext}
-          >
-            <ArrowNext className="h-6 w-6" />
-          </div>
-        </div>
+            </motion.div>
+          ))}
+       </ScrollAnimationWrapper>
+       <div
+          className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
+          style={{ filter: "blur(114px)" }}
+       ></div>
       </div>
-    </>
+    </div>
   );
 };
 
