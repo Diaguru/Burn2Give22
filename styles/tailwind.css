@@ -25,6 +25,9 @@ p {
 .animation-hover:hover:after {
   @apply left-0 w-full;
 }
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
 
 li.custom-list:before {
   content: "\2022"; /* bullet point, for screen readers */
