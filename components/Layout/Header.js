@@ -3,7 +3,7 @@ import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import LogoVPN from "../../public/assets/HLogo.svg";
+import LogoVPN from "../../public/assets/logo-240x240.svg";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);

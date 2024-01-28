@@ -27,7 +27,7 @@ const Testimoni = ({
     },
     {
       name: "Diabright",
-      image: "/assets/diabright.png",
+      image: "/assets/Diabright.png",
       city: "CMO",
       country: "test",
       rating: "5.0",
