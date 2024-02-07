@@ -14,7 +14,7 @@ const defaultMeta = {
   robots: 'follow, index',
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: 'https://burn2give.vercel.app/assets/card_image.png',
+  image: 'https://burn2give.vercel.app/assets/card-image.png',
   author: 'Lorem Ipsum'
 };
 
