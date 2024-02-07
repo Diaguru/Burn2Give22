@@ -102,8 +102,8 @@ const Testimoni = ({
               {/* <div className="flex mx-auto w-40 sm:w-auto"> */}
               <div style={{ width: "100%" }}>
                 {/* <div className="flex items-center justify-center bg-orange-100 w-100 h-100 mr-6 rounded-full"> */}
-                <div className="flex items-center justify-center" style={{ width: "100%" }}>
-                  <img src={listUsers.image} style={{ width: "60%" }} />
+                <div className="flex items-center justify-center" style={{ width: "60" }}>
+                  <img src={listUsers.image} style={{ width: "60" }} />
                 </div>
                 <p className="text-lg text-black-500">{" "}</p>
                 <div className="flex flex-col">
