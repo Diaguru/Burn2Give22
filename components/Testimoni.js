@@ -8,13 +8,13 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const Testimoni = ({
   listUser = [
     {
-      name: "DiaGUru",
+      name: "Diaguru",
       image: "/assets/diaguru.png",
       city: "CEO",
       country: "test",
       rating: "5.0",
       testimoni:
-        "Genius coin developer",
+        "Leading with strong tech skills and a drive to overcome challenges, I navigate my company through the crypto world with confidence and strategic insight.",
     },
     {
       name: "DiaSeaBunny",
@@ -23,11 +23,11 @@ const Testimoni = ({
       country: "test",
       rating: "5.0",
       testimoni:
-        "A genius planning and marketing expert",
+        "He is a visionary, constantly exploring new avenues to market our cryptocurrency innovations and capture the audience's imagination.",
     },
     {
       name: "Diabright",
-      image: "/assets/diabright.png",
+      image: "/assets/Diabright.png",
       city: "CMO",
       country: "test",
       rating: "5.0",
@@ -105,12 +105,13 @@ const Testimoni = ({
                 <div className="flex items-center justify-center" style={{ width: "100%" }}>
                   <img src={listUsers.image} style={{ width: "60%" }} />
                 </div>
-                <p className="text-lg text-black-500">{""}</p>
+                <p className="text-lg text-black-500">{" "}</p>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
                     {listUsers.city}
                   </p>
                   <p className="text-lg text-black-500">{listUsers.name}</p>
+                  <p className="text-lg text-black-500">{" "}</p><br></br>
                   <p className="text-lg text-black-500">{listUsers.testimoni}</p>
                 </div>
               </div>

@@ -48,7 +48,7 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Free.png"
+                    src="/assets/step11.png"
                     width={145}
                     height={165}
                     alt="Step One"
@@ -93,7 +93,7 @@ const Pricing = () => {
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
-                  src="/assets/Standard.png"
+                  src="/assets/step12.png"
                   width={145}
                   height={165}
                   alt="Standard Plan"
@@ -142,7 +142,7 @@ const Pricing = () => {
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                 <Image
-                  src="/assets/Premium.png"
+                  src="/assets/step13.png"
                   width={145}
                   height={165}
                   alt="Premium Plan"
